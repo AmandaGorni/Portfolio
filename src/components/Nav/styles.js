@@ -14,7 +14,7 @@ export const Container = styled.section`
 export const Logo = styled.h2`
   font-size:50px;
   letter-spacing: 2px;
-  margin-top:10px;
+  
 `
 
 export const MenuBox = styled.div`

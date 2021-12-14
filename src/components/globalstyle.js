@@ -9,6 +9,7 @@ const GlobalStyle = createGlobalStyle`
         text-decoration: none;
         color:#B50A56;
         font-family: Bebas Neue;
+        
     }
 
     html, body{

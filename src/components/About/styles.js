@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import backAbout from "../../images/backMe.jpeg"
 
+
 export const Container = styled.section`
     position: relative;
     height: 89vh;
@@ -74,85 +75,74 @@ export const Wrapper = styled.div`
 }
     
 `
-// export const TitleBox = styled.div``
 
-// export const TextBox = styled.div`
-// line-height: 3vh;
-// height: 70%;
-// p{
-//     margin-top: 1em;
-//     letter-spacing: 1px;
-// }
-// `
-
-// export const Title = styled.h2`
-//   font-size:3em;
-//   text-transform: uppercase;  
-//   letter-spacing: .3rem;
-// `
-export const ContainerBox = styled.div`
+export const ContainerBox = styled.div` 
+  
     position:relative;
-    /* border:2px solid red; */
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80vh;
     display: flex;
     justify-content:center;
     align-items:center;
     flex-wrap:wrap;
-    /* padding: 30px 20px 10px; */
+    @media only screen and (max-width: 1024px) {
+      width: 100%;
+    }
 `
 
 export const Card = styled.div`
-/* border:2px solid blue; */
-    max-width:300px;
-    /* height:420px; */
-    height: 180px;
-    background: #fff;
-    margin:30px 10px;
-    padding: 20px 15px;
-    display: flex;
-    border-radius:4px;
-    flex-direction:column;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
-    transition: 0.3s ease-in-out;
-    &:hover{
-        height: 320px;
-    }
+  max-width: 1000px;
+  margin:auto;
+  width: 90%;
+  height:70vh;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 `
 
-export const ImgBox = styled.picture`
-    position: relative;
-    background: #fff;
-    bottom: 40px;
-    left: 3px;
-    min-width:initial;
-    width: 260px;
-    height: 260px;
-    border-radius: 4px;
-    z-index:1;
-    box-shadow: 0 5px 20 px rgba(0, 0, 0, 0.2);
-    img{
-        max-width:100%;
-        border-radius:4px;
-    }
-`
+export const Front = styled.picture`
 
+width: 100%;
+height: 100%;
+  backface-visibility: hidden;
+  position: absolute;
+  border-radius: 20px;
+  
+  transition: transform 1s linear;
+  transform: perspective(600px) rotateY(0deg);
+  ${Card}:hover &{
+  transform: perspective(600px) rotateY(-180deg);
+}
+  img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+
+}
+`
+export const Back = styled.div`
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  position: absolute;
+  border-radius: 20px;
+  
+  transition: transform 1s linear;
+  background: #ececec;
+  transform: perspective(600px) rotateY(180deg);
+  ${Card}:hover &{
+    transform: perspective(600px) rotateY(0deg);
+}
+`
 export const Content = styled.div`
-/* border:2px solid green; */
-    position: relative;
-    /* margin-top: -140px; */
-    /* padding: 10px 15px; */
-    text-align:center;
-    
-    visibility: hidden;
-    opacity:0;
-    transition: 0.3s ease-in-out;
-    transition-delay: 0s;
-    ${Card}:hover &{
-        visibility: visible;
-        opacity: 1;
-        margin-top:5px;
-        transition-delay: 0.2s;
-        
-    }
+ text-align: center;
+  color: #333;
+  width: 100%;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 `
