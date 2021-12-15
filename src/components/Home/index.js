@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState, useEffect } from "react";
 import * as S from './styles'
 import { graphql, useStaticQuery } from 'gatsby'
+
 
 export default function Start() {
    

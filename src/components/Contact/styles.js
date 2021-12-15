@@ -123,10 +123,8 @@ export const Top =styled.div`
   transition: 300ms;
   cursor:pointer;
   &:hover{
-    box-shadow: 5px 5px 10px 0 #00000050;
-    
-  }
-  
+    box-shadow: 5px 5px 10px 0 #00000050;  
+    }
   }
 `
 export const Bottom =styled.div`
@@ -155,9 +153,6 @@ export const Social = styled.div`
     filter: invert(1);
     }
 `
-
-
-
 export const Title = styled.h2`
   font-size:3em;
   text-transform: uppercase;  

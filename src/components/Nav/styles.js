@@ -4,30 +4,37 @@ import { Link } from "gatsby";
 
 export const Container = styled.section`
   max-width: 1440px;
+  width: 90%;
   margin: auto;
   display: flex;
   justify-content:space-between;
-  width: 100%;
   height: 8vh;
   
 `
 export const Logo = styled.h2`
   font-size:50px;
   letter-spacing: 2px;
-  
+
 `
 
 export const MenuBox = styled.div`
- width: 31em;
+ width: 30%;
  display: flex;
  justify-content: space-between;
+ transition: 800ms ease all;
+ @media (max-width:1024px){
+   width: 50%;
+ }
+ @media (max-width:625px){
+   width: 80%;
+ }
 `
 export const Nav = styled(Link)`
+ 
 `
 export const BtnMenu = styled.button`
+
    background-color: transparent;
-    /* background-image: linear-gradient(to top, #cd3273, #b02765, #931d56, #781247, #5e0838); */
-    
     color: #fff;
     border: none;
     border-radius: 10px;
@@ -36,7 +43,7 @@ export const BtnMenu = styled.button`
     width: 100%;
     font-size: 24px;
     letter-spacing: 1px;
-    padding: 0 2em;
+    /* padding: 0 2em; */
     cursor: pointer;
     transition: 800ms ease all;
     outline: none;

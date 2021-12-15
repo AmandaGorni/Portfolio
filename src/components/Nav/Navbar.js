@@ -26,7 +26,7 @@ export default function Navbar() {
                 
                 <div >
                     <Link to="/">
-                        <S.Logo>{title.slice(0,7)}<span style={{color:'#fff'}}>{title.slice(7,12)}</span></S.Logo>
+                        <S.Logo>{title.slice(0,1)}<span style={{color:'#fff'}}>{title.slice(1)}</span></S.Logo>
                     </Link>
                 </div>
                 <S.MenuBox >
@@ -41,4 +41,3 @@ export default function Navbar() {
         </div>
     )
 }
-/* <Link key={index} href={`/category/${category}`}></Link> */
