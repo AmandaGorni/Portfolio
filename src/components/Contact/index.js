@@ -76,11 +76,11 @@ export default function Contact() {
                             target="_blank"  >
                             <img src={mod3[1].url} alt="" />
                         </a>
-                        <a  href="https://pt-br.reactjs.org/docs/getting-started.html"
+                        <a  href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
                             target="_blank"  >
                             <img src={mod3[0].url} alt="" />
                         </a>
-                        <a  href="https://pt-br.reactjs.org/docs/getting-started.html"
+                        <a  href="https://www.gatsbyjs.com/docs/"
                             target="_blank"  >
                             <img src={mod3[2].url} alt="" />
                         </a>
