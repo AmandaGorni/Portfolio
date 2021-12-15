@@ -74,19 +74,111 @@ export const ContentBox = styled.div`
 }
     
 `
-export const TitleBox = styled.div``
-
-export const TextBox = styled.div`
-line-height: 3vh;
-height: 70%;
-p{
-    margin-top: 1em;
-    letter-spacing: 1px;
-}
+export const Card = styled.div`
+    width: 360px;
+    height: 550px;
+    padding: 5px 20px 30px 20px;
+    border-radius: 5px;
+    background-color: #31394d;
+    box-shadow: 3px 3px 5px 0 #31394d70;
+    transition: 500ms;
+    &:hover{
+        transform: scale(1.01);
+        box-shadow: 10px 10px 10px 5px #31394d30;
+    }
 `
+export const Top =styled.div`
+
+  display: flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:space-between;
+  height: 50%;
+  padding: 10px;
+  border-bottom: solid 1px #ffffff50;
+  img{
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: 700ms;
+  filter: grayscale(0.3);
+
+  &:hover{
+    filter: brightness(1.05);
+    transform: scale(1.1);
+    }
+  }
+  h2{
+      font-size:clamp (20px, 2vw,30px)
+  }
+  button{
+  border: none;
+  background: linear-gradient(45deg, rgb(112, 69, 151), rgb(233, 79, 220));
+  padding: 9px 40px;
+  border-radius: 20px;
+  color:#fff;
+  font-size: 20px;
+  box-shadow: 2px 2px 3px 0 #00000070;
+  transition: 300ms;
+  cursor:pointer;
+  &:hover{
+    box-shadow: 5px 5px 10px 0 #00000050;
+    
+  }
+  
+  }
+`
+export const Bottom =styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px 5px;
+`
+export const Social = styled.div`
+    display: grid;
+    place-items: center;
+    a{
+    border-radius: 50%;
+    padding: 12px;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(45deg, rgb(33, 102, 122), rgb(192, 154, 228));
+    transition: 300ms;
+
+    &:hover{
+    transform: rotate(-10deg);
+    filter: brightness(1.1);  
+        }
+    }
+    img{
+    width: 35px;
+    filter: invert(1);
+    }
+`
+
+
 
 export const Title = styled.h2`
   font-size:3em;
   text-transform: uppercase;  
   letter-spacing: .3rem;
+`
+export const ContentIcon =styled.div`
+    display: flex;
+    justify-content:space-between;
+    a{
+    border-radius: 50%;
+    padding: 22px;
+    background: linear-gradient(45deg, rgb(33, 102, 122), rgb(192, 154, 228));
+    transition: 300ms;
+
+    &:hover{
+    transform: rotate(-10deg);
+    filter: brightness(1.1);  
+        }
+    }
+    img{
+    width: 42px;
+    height: 42px;
+    }
 `
