@@ -4,7 +4,7 @@ import backAbout from "../../images/backMe.jpeg"
 
 export const Container = styled.section`
     position: relative;
-    height: 89vh;
+    height: 88vh;
     animation: back 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     
     &::after{
@@ -18,7 +18,6 @@ export const Container = styled.section`
     right: 0;
     position: absolute;
     z-index: -1;
-    /* animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940); */
     }
 
     @keyframes back {

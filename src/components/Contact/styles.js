@@ -128,9 +128,12 @@ export const Top =styled.div`
   }
 `
 export const Bottom =styled.div`
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 10px 5px;
+  padding: 10px 5px; */
+  display: flex;
+  justify-content:space-between;
+  margin:30px;
 `
 export const Social = styled.div`
     display: grid;

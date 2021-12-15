@@ -9,14 +9,11 @@ export const Container = styled.section`
   display: flex;
   justify-content:space-between;
   height: 8vh;
-  
 `
 export const Logo = styled.h2`
-  font-size:50px;
+  font-size:40px;
   letter-spacing: 2px;
-
 `
-
 export const MenuBox = styled.div`
  width: 30%;
  display: flex;
@@ -30,11 +27,9 @@ export const MenuBox = styled.div`
  }
 `
 export const Nav = styled(Link)`
- 
 `
 export const BtnMenu = styled.button`
-
-   background-color: transparent;
+    background-color: transparent;
     color: #fff;
     border: none;
     border-radius: 10px;
@@ -43,7 +38,6 @@ export const BtnMenu = styled.button`
     width: 100%;
     font-size: 24px;
     letter-spacing: 1px;
-    /* padding: 0 2em; */
     cursor: pointer;
     transition: 800ms ease all;
     outline: none;

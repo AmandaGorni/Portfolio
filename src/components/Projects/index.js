@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import * as S from './styles'
 import { graphql, useStaticQuery } from 'gatsby'
 
@@ -7,21 +7,18 @@ import Carousel from 'nuka-carousel';
 export default function Projects() {
 
   const settings = {
-    
     slidesToShow: 1,
     slidesToScroll: 1,
-    speed: 500,
+    speed: 800,
     swiping: true,
     transitionMode: 'scroll',
     widthMode: 'current',
     wrapAround: true,
     autoplay: true,
-    autoplayInterval: 3000,
+    autoplayInterval: 8000,
     pauseOnHover: true,   
 
   }
-
-
   const data = useStaticQuery(graphql`
     query{
         alldata{
@@ -36,10 +33,6 @@ export default function Projects() {
         }
     }
     `)
-
-    
-      
-  console.log(data)
   return (
     <S.Container >
     <S.Wrapper>
@@ -57,9 +50,7 @@ export default function Projects() {
               </S.Content>
               </S.Back>
             </S.Card>
-          )
-
-          )}
+          ) )}
           </Carousel>
       </S.ContainerBox>
     </S.Wrapper>

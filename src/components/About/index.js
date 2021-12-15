@@ -5,25 +5,21 @@ import { graphql, useStaticQuery } from 'gatsby'
 import Carousel from 'nuka-carousel';
 
 export default function AboutMe() {
-
-  
+ 
   const settings = {
     
     slidesToShow: 1,
     slidesToScroll: 1,
-    speed: 500,
+    speed: 800,
     swiping: true,
     transitionMode: 'scroll',
     widthMode: 'current',
     wrapAround: true,
     autoplay: true,
-    autoplayInterval: 3000,
+    autoplayInterval: 8000,
     pauseOnHover: true,   
 
   }
-
-
-
   const data = useStaticQuery(graphql`
     query{
         alldata{
@@ -38,7 +34,6 @@ export default function AboutMe() {
     }
     `)
 
-    console.log(data)
   return (
     <S.Container>
       <S.Wrapper>
@@ -56,9 +51,7 @@ export default function AboutMe() {
                 </S.Content>
                 </S.Back>
               </S.Card>
-            )
-
-            )}
+            )  )}
             </Carousel>
         </S.ContainerBox>
       </S.Wrapper>
