@@ -144,5 +144,6 @@ export const Content = styled.div`
   position: absolute;
   top: 50%;
   left: 50%;
+  font-size:clamp(20px,2vw,40px);
   transform: translate(-50%, -50%);
 `

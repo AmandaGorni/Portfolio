@@ -36,7 +36,7 @@ export const Container = styled.section`
 export const Wrapper = styled.div`
     position:relative;
     padding: 3rem;
-    width: 80%;
+    width: 70%;
     height: 100%;
     float: left;
     color:#fff;
@@ -76,7 +76,8 @@ export const Wrapper = styled.div`
     
 `
 
-export const ContainerBox = styled.div`    
+export const ContainerBox = styled.div` 
+  
     position:relative;
     width: 80%;
     height: 80vh;
@@ -84,12 +85,15 @@ export const ContainerBox = styled.div`
     justify-content:center;
     align-items:center;
     flex-wrap:wrap;
-    
+    @media only screen and (max-width: 1024px) {
+      width: 100%;
+    }
 `
 
 export const Card = styled.div`
-
-width: 80%;
+  max-width: 1000px;
+  margin:auto;
+  width: 90%;
   height:70vh;
   cursor: pointer;
   position: absolute;
@@ -140,5 +144,6 @@ export const Content = styled.div`
   position: absolute;
   top: 50%;
   left: 50%;
+  font-size:clamp(20px,2vw,40px);
   transform: translate(-50%, -50%);
 `

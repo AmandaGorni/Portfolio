@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import back from "../images/back.png"
+
 
 const GlobalStyle = createGlobalStyle`
     *{
